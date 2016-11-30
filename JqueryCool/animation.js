@@ -1,7 +1,9 @@
 $(window).load(function(){
 
    $("#noteHolder").show(1000,function(){
+
    	$("#note1").show(300,function(){
+
    		$("#note2").show(300,function(){
    			$("#note3").show(300,function(){
    				$("#note4").show(300,function(){
@@ -10,8 +12,10 @@ $(window).load(function(){
    							$("#note7").show(300,function(){
    								$("#note8").show(300,function(){
    									$("#note9").show(300);
-                              $("#myAudioElement")[0].play();
-   									setInterval(function(){
+
+                                                       $("#myAudioElement")[0].play();
+
+   								   setInterval(function(){
 								   		changeColor();
 								    }, 500);
    								});
@@ -25,11 +29,6 @@ $(window).load(function(){
  	
    });
 
-   $("#menuFeel").click(function(){
-      $("html, body").animate({ scrollTop: $('#Container').height() }, 1900,function(){
-     
-      }); 
-   });
    function randomColor()
    {
          var Rnum= Math.floor((Math.random() * 9) + 1);
@@ -40,7 +39,8 @@ $(window).load(function(){
 
    function changeColor()
    {
-   		var Rnum= Math.floor((Math.random() * 9) + 1);
+   	var Rnum= Math.floor((Math.random() * 9) + 1);
+
          var colorBack=randomColor();
          if (Rnum==1) {
             $("#note1").css("background-color",colorBack);
@@ -189,36 +189,8 @@ $(window).load(function(){
             $("#ball6").hide();$("#ball7").hide();$("#ball8").hide();
          };
    }
-   var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
-var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
-// Create a newDate() object
-var newDate = new Date();
-// Extract the current date from Date object
-newDate.setDate(newDate.getDate());
-// Output the day, date, month and year   
-$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
 
-setInterval( function() {
-   // Create a newDate() object and extract the seconds of the current time on the visitor's
-   var seconds = new Date().getSeconds();
-   // Add a leading zero to seconds value
-   $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
-   },1000);
-   
-setInterval( function() {
-   // Create a newDate() object and extract the minutes of the current time on the visitor's
-   var minutes = new Date().getMinutes();
-   // Add a leading zero to the minutes value
-   $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
-    },1000);
-   
-setInterval( function() {
-   // Create a newDate() object and extract the hours of the current time on the visitor's
-   var hours = new Date().getHours();
-   // Add a leading zero to the hours value
-   $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
-    }, 1000);  
 
  });
     

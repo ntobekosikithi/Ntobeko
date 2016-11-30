@@ -1,36 +1,39 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-<title>Piano</title>
-<script src="animation.js"></script>
-<style type="text/css">
 #Container
 {
-  width: 98%;
-  height: 780px;
-  margin-left: 10px;
-
+  width: 100%;
+  height: 880px;
+  text-align: center;
 }
+
+#footer
+{
+  width: 100%;
+  height: 380px;
+  background-color: black;
+  text-align: center;
+}
+
 #piano
 {
   width: 750px;
   height: 380px;
+  margin-left:550px;
   background-color: black;
-  margin-top: 200px;
-  margin-left: 320px;
   position: absolute;
   opacity: 0.9;
   filter:alpha(opacity=90); 
-  display: none;
 }
 #noteHolder
 {
+
   width: 715px;
   height: 160px;
-  background-color: white;
+  background:url(noteback.jpg);
+  background-repeat: no-repeat;
   margin-top: 10px;
   margin-left: 15px;
+  background-color: white;
+  display: none;
 }
 #note1
 {
@@ -41,6 +44,7 @@
   background-color: white;
   margin-top: 10px;
   margin-left: 15px;
+  display: none;
 }
 #note2{
   margin-left: 95px;
@@ -50,6 +54,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note3{
   margin-left: 175px;
@@ -59,6 +64,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note4{
   margin-left: 255px;
@@ -68,6 +74,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note5{
   margin-left: 335px;
@@ -77,6 +84,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note6{
   margin-left: 415px;
@@ -86,6 +94,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note7{
   margin-left: 495px;
@@ -95,6 +104,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note8{
   margin-left: 577px;
@@ -104,6 +114,7 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
 }
 #note9{
   margin-left: 660px;
@@ -113,45 +124,69 @@
   position: absolute;
   background-color: white;
   margin-top: 10px;
+  display: none;
+}
+#ball1,#ball2,#ball3,#ball4,#ball5,#ball6,#ball7,#ball8,#ball9
+{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 15px;
+  border-radius: 20px;
+  display: none;
+}
+#ball2{margin-left: 95px;}
+#ball3{margin-left: 175px;}
+#ball4{margin-left: 255px;}
+#ball5{margin-left: 335px;}
+#ball6{margin-left: 415px;}
+#ball7{margin-left: 500px;}
+#ball8{margin-left: 580px;}
+#ball9{margin-left: 660px;}
+
+#bigTitle
+{
+  font-family: Georgia, serif;
+  font-size: 55px;
+  color: white;
+}
+#titleCont
+{
+  width: 400px;
+  height: 90px;
+  background-color: black;
+  margin-left: 580px;
+}
+.menuBar
+{
+  height: 90px;
+  width: 833px;
+  background-color:black;
+  position: absolute;
+  opacity: 0.9;
+ filter:alpha(opacity=90);
+}
+.menuBar ul li
+{
+  list-style: none;
+  display: inline;
+  padding: 15px;
 
 }
-</style>
-</head>
+.menuBar a 
+{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.menuBar ul li:hover
+{
+  background-color: red;
+  transition:all 0.45s;
+  opacity: 0.7;
+  filter:alpha(opacity=90);
+}
 
-<body>
-  <div id="Container">
-    <div id="piano">
-      <div id="noteHolder">
-        
-      </div>
-      <div id="note1">
 
-        </div>
-        <div id="note2">
-
-        </div>
-        <div id="note3">
-
-        </div>
-        <div id="note4">
-
-        </div>
-        <div id="note5">
-
-        </div>
-        <div id="note6">
-
-        </div>
-        <div id="note7">
-
-        </div>
-        <div id="note8">
-
-        </div>
-        <div id="note9">
-
-        </div>
-    </div>
-  </div>
-</body>
-</html>
