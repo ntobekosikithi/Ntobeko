@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>index</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="animation.js"></script>
+<link rel="stylesheet" type="text/css" href="animation.css">
+<!-- Include jQuery -->
+<script src="lazyLineJquery.js"></script>
+
+<!-- Include lazylinepainter -->
+<script src="lazyLine.js"></script>
+<script type="text/javascript">
+        var pathObj = {
+    "demo": {
+        "strokepath": [
+            {
+                "path": "m108.050116,296.646229c-8.536898,-1.508478 -16.466297,-9.713227 -14.855813,-19.290947c0.8151,-10.514383 8.798794,-18.976704 16.831616,-24.552199c10.690631,-7.618848 25.30772,-10.449106 37.089006,-3.877988c0.690313,-52.999038 0.296893,-106.011349 0.401462,-159.016378c7.429344,-1.883131 5.027204,8.299339 6.714527,13.008276c1.610061,13.846825 10.48195,24.711943 19.31288,34.413956c10.956216,12.19499 22.590158,25.125361 26.151326,42.020716c3.888699,19.602299 -2.328018,39.655652 -10.395672,57.223059c-0.584201,5.630183 -10.449609,13.775764 -5.749381,3.601727c7.914361,-17.404453 14.452642,-37.448575 9.050587,-56.721284c-5.144326,-19.230532 -21.178808,-35.290903 -40.266744,-38.170654c-0.123363,40.606704 0.300398,81.221084 -0.452378,121.821283c-1.876554,11.959394 -11.799377,20.833157 -21.750223,25.900165c-6.861579,3.127414 -14.605821,5.019623 -22.081186,3.640284l-0.000007,-0.000014z",
+                "duration": 1400
+            },
+            {
+                "path": "m232.304638,260.924282c-6.613047,-1.242699 -12.755499,-8.00185 -11.507949,-15.892068c0.631411,-8.66185 6.815922,-15.633191 13.03849,-20.226338c8.28142,-6.27648 19.604444,-8.608074 28.730732,-3.194724c0.534746,-43.661117 0.229986,-87.333168 0.31099,-130.999221c5.755088,-1.551341 3.894287,6.837075 5.20136,10.716343c1.247222,11.407147 8.119767,20.357936 14.960584,28.350548c8.487154,10.04635 17.499304,20.698514 20.257937,34.61707c3.012353,16.148563 -1.803382,32.668707 -8.052932,47.140906c-0.452547,4.638199 -8.094715,11.348607 -4.453716,2.967137c6.130803,-14.337956 11.195635,-30.850496 7.010972,-46.727539c-3.985015,-15.842297 -16.406011,-29.072985 -31.192344,-31.445352c-0.095562,33.452193 0.232701,66.91071 -0.350432,100.357545c-1.453659,9.852264 -9.140303,17.162555 -16.848654,21.336805c-5.315273,2.576394 -11.314295,4.135213 -17.105032,2.998901l-0.000005,-0.000011z",
+                "duration": 1400
+            },
+            {
+                "path": "m339.08124,237.168463c-5.183116,-1.063118 -9.997393,-6.845512 -9.019599,-13.595525c0.494882,-7.410137 5.342124,-13.374058 10.219194,-17.303455c6.490739,-5.369474 15.365399,-7.364132 22.518321,-2.733058c0.419118,-37.351702 0.180257,-74.712759 0.243745,-112.068683c4.510672,-1.327159 3.05223,5.849058 4.076676,9.167737c0.977537,9.758714 6.36404,17.416035 11.725675,24.253645c6.651987,8.594564 13.715451,17.707397 15.877588,29.6146c2.360996,13.814953 -1.413439,27.947792 -6.311657,40.328631c-0.354693,3.967939 -6.344404,9.708633 -3.490695,2.53836c4.805147,-12.265995 8.774817,-26.392329 5.494998,-39.975c-3.12334,-13.552946 -12.85856,-24.871683 -24.447662,-26.901223c-0.074899,28.618057 0.182384,57.241525 -0.274658,85.854998c-1.139336,8.428525 -7.163906,14.682415 -13.20549,18.253449c-4.165958,2.204082 -8.867819,3.537639 -13.406432,2.565534l-0.000004,-0.00001z",
+                "duration": 1400
+            },
+            {
+                "path": "m339.08124,237.16846c-5.18312,-1.06312 -9.99739,-6.84551 -9.0196,-13.59552c0.49488,-7.41014 5.34213,-13.37406 10.21919,-17.30346c6.49074,-5.36947 15.3654,-7.36413 22.51833,-2.73305c0.41911,-37.35171 0.18025,-74.71276 0.24374,-112.06869c4.51067,-1.32716 3.05223,5.84906 4.07668,9.16774c0.97753,9.75871 6.36404,17.41603 11.72567,24.25364c6.65199,8.59457 13.71545,17.7074 15.87759,29.6146c2.361,13.81496 -1.41344,27.9478 -6.31166,40.32863c-0.35469,3.96794 -6.3444,9.70864 -3.49069,2.53836c4.80515,-12.26599 8.77481,-26.39232 5.495,-39.975c-3.12334,-13.55294 -12.85856,-24.87168 -24.44767,-26.90122c-0.07489,28.61806 0.18239,57.24153 -0.27465,85.855c-1.13934,8.42853 -7.16391,14.68241 -13.20549,18.25345c-4.16596,2.20408 -8.86782,3.53764 -13.40644,2.56553l0,-0.00001z",
+                "duration": 1400
+            },
+            {
+                "path": "m428.707624,219.225794c-3.838101,-0.874037 -7.403068,-5.627988 -6.679014,-11.177462c0.366459,-6.092195 3.955847,-10.99539 7.567311,-14.225919c4.806393,-4.414472 11.378079,-6.054368 16.674824,-2.246958c0.310351,-30.708448 0.133475,-61.424574 0.180489,-92.136491c3.340151,-1.091115 2.260176,4.808764 3.018782,7.537193c0.723861,8.023055 4.712572,14.318467 8.682859,19.939961c4.925799,7.065966 10.156291,14.558015 11.757356,24.347437c1.748321,11.357873 -1.046652,22.977089 -4.673784,33.155902c-0.262648,3.262214 -4.698028,7.981891 -2.584856,2.086895c3.558214,-10.084398 6.497747,-21.698262 4.069048,-32.865167c-2.312833,-11.142455 -9.521764,-20.448078 -18.1035,-22.11665c-0.055456,23.528138 0.13506,47.060724 -0.203378,70.585089c-0.843681,6.929457 -5.304876,12.071041 -9.778666,15.006946c-3.084894,1.812069 -6.566621,2.908446 -9.927469,2.109233l0,-0.000008z",
+                "duration": 1400
+            }
+        ],
+        "dimensions": {
+            "width": 580,
+            "height": 300
+        }
+    }
+}; 
+ 
+ 
+/* 
+ Setup and Paint your lazyline! 
+ */ 
+ 
+ $(document).ready(function(){ 
+setInterval(function(){
+                      
+$('#demo').lazylinepainter( 
+ {
+    "svgData": pathObj,
+    "strokeWidth": 2,
+    "strokeColor": "white"
+  }).lazylinepainter('paint'); 
+}, 7000);
+ 
+
+ });/* 
+ Setup and Paint your lazyline! 
+ */ 
+ 
+
+ 
+
+      
+    </script>
+
+</head>
+
+<body>
+  <div id="Container">
+    <div id="Caption">
+      <div class="menuBar"> <br>
+            <ul>
+              <li><a href="">Music</a></li>
+              <li id="menuFeel"><a href="">The Feel</a></li>
+              <li><a href="">Change</a></li>
+              <li><a href="">Author</a></li>
+              <li><a href="angularApi.html" target="_blank">Weather</a></li>
+            </ul>
+          </div>
+
+      <div class="clock">
+        <div id="Date"></div>
+          <ul>
+              <li id="hours"></li>
+              <li id="point">:</li>
+              <li id="min"></li>
+              <li id="point">:</li>
+              <li id="sec"></li>
+          </ul>
+        </div>
+    </div>
+    <div id="titleCont"><span id="bigTitle">Music moves us</span></div>
+    <div id="piano">
+      <div id="noteHolder">
+        <div id="ball1"></div>
+        <div id="ball2"></div>
+        <div id="ball3"></div>
+        <div id="ball4"></div>
+        <div id="ball5"></div>
+        <div id="ball6"></div>
+        <div id="ball7"></div>
+        <div id="ball8"></div>
+        <div id="ball9"></div>
+      </div>
+        <div id="note1">
+          
+        </div>
+        <div id="note2">
+          
+        </div>
+        <div id="note3">
+          
+        </div>
+        <div id="note4">
+          
+        </div>
+        <div id="note5">
+          
+        </div>
+        <div id="note6">
+          
+        </div>
+        <div id="note7">
+          
+        </div>
+        <div id="note8">
+          
+        </div>
+        <div id="note9">
+          
+        </div>
+    </div>
+  </div>
+
+  <div id="Feature">
+    <br>
+    <span id="theFeelTitle">The Feel</span><br><br>
+    <p style="margin-left:10px;font-family: arial, sans-serif; font-size:17px;">When your playlist strikes all the right chords, your body can go on a physiological joyride. Your heart rate increases. Your pupils dilate. Your body temperature rises. Blood redirects to your legs. Your cerebellum mission control for body movement becomes more active. Your brain flushes with dopamine and a tingly chill whisks down your back. About 50 percent of people get chills when listening to music. Research shows that's because music stimulates an ancient reward pathway in the brain, encouraging dopamine to flood the striatum a part of the forebrain activated by addiction, reward, and motivation. Music, it seems, may affect our brains the same way that sex, gambling, and potato chips do.</p>
+
+    <p style="margin-left:10px;font-family: arial, sans-serif;font-size:17px;">But music is tricky. It can be unpredictable, teasing our brains and keeping those dopamine triggers guessing. And that's where the chills may come in. Because when you finally hear that long awaited chord, the striatum sighs with dopamine soaked satisfaction and BAM you get the chills. The greater the build up, the greater the chill.
+    But there are competing theories. Neuroscientist Jaak Panksepp, for example, discovered that sad music triggers chills more often than happy music. He argues that a melancholy tune activates an ancient, chill inducing mechanism a distress response our ancestors felt when separated from family. When a ballad makes us feel nostalgic or wistful, that evolutionary design kicks into gear.
+
+What's interesting about Panksepp's theory, though, is that chills don't sadden most people. The experience is overwhelmingly positive. Recent research shows that sad music actually evokes positive emotions sadness experienced through art is more pleasant than the sadness Your experience from a bad day at the office.  
+ And this may hint at another theory. The amygdala, which processes your emotions, responds uniquely to music. A somber tune may activate a fear response in the amygdala, making your hair stand on end. When that happens, your brain quickly reviews whether there's any real danger. When it realizes there's nothing to worry about, that fear response becomes positive. The fear subsides but the chill remains.</p><p style="margin-left:10px;font-family: arial, sans-serif;font-size:17px;">The study of music and emotion seeks to understand the psychological relationship between human affect and music. It is a branch of music psychology with numerous areas of study, including the nature of emotional reactions to music, how characteristics of the listener may determine which emotions are felt, and which components of a musical composition or performance may elicit certain reactions. The field draws upon and has significant implications for such areas as philosophy, musicology, music theory and aesthetics, as well the acts of musical composition and performance.</p>
+ <br>
+ <span style="margin-left:25px;font-family: arial, sans-serif;font-size:17px;color:red;">By: People who love music</span>
+  </div>
+  <div id="More">
+    <div id="moreTitle">
+      <span style="font-family: Georgia, serif;font-size: 110px;color: white;">Without music the world would be a mistake</span>
+      <br>
+      <span style="font-family: Georgia, serif;font-size: 20px;color: black;margin-left:5px;color:white">By: Friedrich Nietzsche</span>
+    </div>
+  </div>
+  <div id="About">
+    <br>
+    <span id="AthourFeelTitle">Author</span>
+    <br><br>
+    <div id="right">
+     <p style="color:white;font-family: arial, sans-serif;font-size:17px;">Name: Ntobeko<br>Surname: Sikithi<br>
+      <br>
+      Music is able to affect the physiology of our body! Studies show that listening to exciting music actually increases our heart and breathing rates, and causes adrenaline to enter the bloodstream. Most people who work out listen to music that has a fast beat for this reason, and also because it makes exercising more enjoyable. Music has the ability to energize us through our physiology and can wake us up and get us pumped!
+
+In that same line of thought, music with a slower tempo can calm you down. Cortisol, a stress hormone, is lowered in the blood when your body is exposed to music that is calmer. Lullabies, for instance, are sung to babies in order to sooth them to sleep. The tranquility of a lullaby can lower the heart and respiration rate in order to put someone at peace.<br><br>
+    <b>Is music important:</b>  Did you know that music making is part of what makes humans human? Every culture makes music. Not only that, every past culture has made music too. Musical instruments are amongst the oldest man-made objects ever found. For example, there are flutes around 37,000 years old and perhaps even older!
+
+Compare this with reading and writing. The earliest forms of writing are no more than about 3500 years old. And many cultures of the world still do not read or write.
+     </p>
+    </div>
+    
+  </div>
+  <div id="Author">
+    <div id="QuoteTitle">
+      <span style="font-family: Georgia, serif;font-size: 110px;color: white;">Where words fail, music speaks.</span>
+      <br>
+      <span style="font-family: Georgia, serif;font-size: 20px;color: black;margin-left:5px;color:white">By: Hans Christian Andersen</span>
+    </div>
+  </div>
+  <div id="footer">
+    <audio controls src="stay.mp4" id="myAudioElement" loop  style="display:none;">
+      <a href="intro.mp3">Introduction to HTML5 (10:12) - MP3 - 3.2MB</a>blue
+    </audio>
+    <div id='demo' style="width:800px; height:340px;background-color:transparent;margin-left:300px;"></div>
+
+  </div>
+</body>
+</html>
