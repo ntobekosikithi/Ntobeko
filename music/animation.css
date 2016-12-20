@@ -17,7 +17,7 @@
 {
   width: 750px;
   height: 380px;
-  margin-left:550px;
+  margin: auto;
   background-color: black;
   position: absolute;
   opacity: 0.9;
@@ -156,7 +156,7 @@
 {
   width: 400px;
   height: 90px;
-  background-color: black;
+  background-color: transparent;
   margin-left: 580px;
 }
 .menuBar
