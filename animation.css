@@ -17,11 +17,10 @@
 {
   width: 750px;
   height: 380px;
-  margin: auto;
   background-color: black;
-  position: absolute;
   opacity: 0.9;
   filter:alpha(opacity=90); 
+  display: inline-block;
 }
 #noteHolder
 {
@@ -157,7 +156,7 @@
   width: 400px;
   height: 90px;
   background-color: transparent;
-  margin-left: 580px;
+  display: inline-block;
 }
 .menuBar
 {
